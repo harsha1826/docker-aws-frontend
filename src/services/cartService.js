@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const API_URL = "http://ec2-13-218-241-109.compute-1.amazonaws.com:8081/api/cart";
+const API_URL = "http://ec2-13-218-241-109.compute-1.amazonaws.com:8081/api/cart";//change the ip address as like aws
 
-const API_BASE = "http://ec2-13-218-241-109.compute-1.amazonaws.com:8081/api/cart";
+const API_BASE = "http://ec2-13-218-241-109.compute-1.amazonaws.com:8081/api/cart";//change the ip address as like aws
 
 export const addToCart = async (userId, productId) => {
   return await axios.post(`${API_BASE}/add`, {
